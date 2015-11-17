@@ -1,0 +1,680 @@
+@charset "utf-8";
+
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* end css reset */
+
+h1 {
+    font-size: 1.8em;
+    padding-bottom: 0.5%;
+    border-bottom: 3px solid magenta;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.7em;
+    padding-bottom: 0.5%;
+    border-bottom: 3px solid magenta;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+body {
+    background-color: black;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    transition: 0.5s all linear;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    margin: 0 auto;
+    margin-top: 0.5%;
+    background-color: magenta;
+    padding: 20px 0;
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.mob_menu {
+    display: none;
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+main {
+    width: 80%;
+    min-width: 1150px;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 5%;
+}
+
+section.main_stuff {
+    float: left;
+    width: 60%;
+    min-width: 750px;
+}
+
+section.side_stuff {
+    float: left;
+    width: 30%;
+    margin-left: 4.5%;
+}
+
+.main {
+    margin-bottom: 6%;
+    background-color: white;
+    padding: 4%;
+}
+
+.side {
+    margin-bottom: 13%;
+    background-color: white;
+    padding: 5%;
+}
+
+.featured {
+    overflow: auto;
+}
+
+.box1 {
+    width: 49%;
+    height: 49%;
+    position: relative;
+    float: left;
+}
+
+.box1 img {
+    width: 100%;
+}
+
+.box1 p {
+    position: absolute;
+    bottom: 0;
+    background-color: magenta;
+    color: white;
+    padding: 3%;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.4em;
+    width: 100%;
+}
+
+.box2, .box3, .box4, .box5 {
+    width: 23%;
+    height: 23%;
+    position: relative;
+    float: left; 
+    margin-left: 2.5%;
+}
+
+.box2, .box3 {
+    margin-bottom: 2.6%;
+}
+
+.box2 img, .box3 img, .box4 img, .box5 img {
+    width: 100%;
+}
+
+.box2 p, .box3 p, .box4 p, .box5 p {
+    position: absolute;
+    bottom: 0;
+    background-color: magenta;
+    color: white;
+    padding: 4% 2%;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 0.6em;
+    width: 100%;
+}
+
+.box1 p:hover, .box2 p:hover, .box3 p:hover, .box4 p:hover, .box5 p:hover {
+    background-color: black;
+}
+
+.article1, .article2, .article3, .article4 {
+    position: relative;
+}
+
+.date {
+    float: left;
+    width: 30%;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.title {
+    float: left;
+    width: 48%;
+    margin-left: 2%;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 1.5%;
+}
+
+.comments {
+    float: left;
+    width: 20%;
+    color: magenta;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: right;
+}
+
+.comments:hover {
+    color: black;
+}
+
+.img {
+    float: left;
+    width: 30%;
+}
+
+.info {
+    margin-left: 2%;
+    line-height: 1.5;
+    font-size: 1.2em;
+    float: left;
+    padding-bottom: 9%;
+    margin-bottom: 10%;
+    position: relative;
+    width: 68%;
+}
+
+.readmore {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2% 5%;
+    background-color: magenta;
+    color: white;
+    text-decoration: none;
+}
+
+.readmore:hover {
+    background-color: black;
+}
+
+.older {
+    text-align: center;
+    clear: both;
+}
+
+.older a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.older a:hover {
+    color: magenta;
+}
+
+.trending_posts {
+    overflow: auto;
+}
+
+.article5, .article6, .article7, .article8 {
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+}
+
+.article5 img, .article6 img, .article7 img, .article8 img {
+    width: 100%;
+    margin-bottom: 6%;
+}
+
+.article5 p, .article6 p, .article7 p, .article8 p {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.article5 a, .article6 a, .article7 a, .article8 a {
+    color: black;
+    text-decoration: none;
+}
+
+.article5 a:hover, .article6 a:hover, .article7 a:hover, .article8 a:hover {
+    color: magenta;
+}
+
+.about_me p {
+    line-height: 1.4;
+}
+
+.about_me img {
+    float: left;
+    max-width: 30%;
+    margin-right: 3%;
+}
+
+.archive {
+    font-weight: bold;
+}
+
+.archive h5 {
+    margin: 4% 0 8%;
+}
+
+.archive ul {
+    list-style: inside;
+}
+
+.archive li {
+    margin-bottom: 5%;
+    font-size: 0.8em;
+    text-indent: 5%;
+}
+
+.archive a {
+    color: black;
+    text-decoration: none;
+}
+
+.archive a:hover {
+    color: magenta;
+}
+
+footer {
+    clear: both;
+    background-color: magenta;
+    height: 200px;
+    width: 100%;
+}
+
+.footer_left {
+    padding-left: 3%;
+    line-height: 2;
+    font-weight: bold;
+    width: 50%;
+    float: left;
+    margin-top: 2%;
+}
+
+.footer_left a {
+    color: black;
+    font-size: 1.5em;
+}
+
+.footer_left a:hover {
+    color: white;
+}
+
+.footer_left li {
+    display: inline;
+    padding: 0 1.5% 0 1%;
+    border-right: 2px solid black;
+}
+
+.footer_left li:nth-of-type(1) {
+    padding-left: 0;
+}
+
+.footer_left li:nth-of-type(5) {
+    border-right: none;
+}
+
+.footer_left ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_left ul a:hover {
+    color: black;
+}
+
+.footer_right {
+    margin-top: 3%;
+    width: 50%;
+    float: right;
+    padding-left: 10%;
+}
+
+.footer_right a {
+    color: black;
+    margin-right: 8%
+}
+
+.footer_right a .fa {
+    font-size: 5em;
+}
+
+.fa:hover {
+    color: white;
+}
+
+/* --media queries---------------------------------- */
+
+@media only screen and (max-width: 1150px) {
+    
+    main {
+        width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+ 
+    section.main_stuff {
+        margin: 0 auto;
+        width: 90%;
+        min-width: 0;
+        margin-left: 5%;
+        margin-right: 3%;
+    }
+    
+    section.side_stuff {
+        margin: 0 auto;
+        width: 90%;
+        min-width: 0;
+        margin-left: 5%;
+        margin-right: 3%;
+    }
+    
+    .side {
+        float: left;
+        width: 48%;
+        margin-bottom: 6%;
+        padding: 3%;
+    }
+
+    .about_me, .latest_mix {
+        margin-right: 4%;
+    }
+    
+    .footer_left ul a {
+        font-size: 1em;   
+    }
+    
+    .footer_right {
+        margin-top: 6%;
+        padding-left: 0;
+    }
+    
+    .footer_right a .fa {
+        font-size: 4em;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    
+    main {
+        margin-top: 0;
+    }
+    
+    .header {
+        background-color: magenta;
+    }
+    
+    .nav {
+        padding: 5px 0;
+        clear: both;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s linear;
+        -webkit-transition: height 0.5s linear;
+    }
+    
+    .show .nav {
+        height: 270px;
+    }
+    
+    .nav ul {
+        margin-top: 3%
+    }
+    
+    .nav li {
+        float: none;
+        width: 100%;
+        display: block;
+        border-top: 1px solid black;
+        padding-left: 10px;
+        padding: 10px 0;
+        line-height: 25px;
+    }
+    
+    .nav a {
+
+    }
+    
+    .nav li:hover {
+        background-color: purple;
+    }
+    
+    .mob_menu {
+        display: block;
+        float: right;
+        background-color: transparent;
+        border: none;
+        width: 49px;
+        height: 35px;
+        background-image: url(../images/icon_menu.png);
+        background-size: cover;
+        margin-right: 12px;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+    
+    section.main_stuff {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    section.side_stuff {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .side {
+        clear: both;
+        padding: 3%;
+        width: 100%;
+    }
+    
+    .about_me {
+        overflow: auto;
+    }
+    
+    .about_me, .latest_mix {
+        margin-right: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 625px) {
+    
+    .box1, .box2, .box3, .box4, .box5 {
+        width: 100%;
+        margin-top: 5%;
+    }
+    
+    .box2, .box3, .box4, .box5 {
+        margin-left: 0;
+    }
+
+    .box2, .box3 {
+        margin-bottom: 0;
+    }
+    
+    .box1 p, .box2 p, .box3 p, .box4 p, .box5 p {
+        padding: 3%;
+        line-height: 1.4;
+        font-size: 1.5em;
+        width: 100%;
+    }
+    
+    .article1, .article2, .article3, .article4 {
+        position: relative;
+        overflow: auto;
+    }
+    
+    .date {
+        float: none;
+        width: 100%;
+    }
+    
+    .title {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2%;
+    }
+    
+    .comments {
+        float: none;
+        width: 100%;
+    }
+    
+    .img {
+        float: none;
+        width: 100%;
+        margin-top: 2%
+    }
+    
+    .info {
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 15%;
+    }
+    
+    .article5, .article6, .article7, .article8 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+    
+    .article5 img, .article6 img, .article7 img, .article8 img {
+        margin-bottom: 0%;
+    }
+
+    .article5 p, .article6 p, .article7 p, .article8 p {
+        font-size: 1.5em;
+    }
+    
+    .archive h5 {
+        font-size: 1.7em;
+        margin: 4% 0 4%;
+    }
+    
+    .archive li {
+        font-size: 1.3em;   
+    }
+    
+    footer {
+        height: 250px;
+    }
+    
+    .footer_right {
+        width: 100%;
+        float: none;
+        padding-top: 5%;
+        padding-left: 3%;
+    }
+    
+    .footer_left {
+        width: 100%;
+        float: none;
+        padding-bottom: 5%;
+    }
+    
+}
